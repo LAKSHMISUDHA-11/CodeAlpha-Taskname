@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next</title>
+    <link rel="stylesheet" href="image.css">
+</head>
+<body>
+    <header>
+        <h1><b>Image Gallery - Page 2</b></h1>
+    </header>
+
+    <section class="gallery-container">
+        <div class="gallery" id="galleryGrid">
+            <img src="image13.jpeg" alt="Image 13">
+            <img src="image14.jpeg" alt="Image 14">
+            <img src="image15.jpeg" alt="Image 15">
+            <img src="image16.jpeg" alt="Image 16">
+            <img src="image17.jpeg" alt="Image 17">
+            <img src="image18.jpeg" alt="Image 18">
+            <img src="image19.jpeg" alt="Image 19">
+            <img src="image20.jpeg" alt="Image 20">
+        </div>
+    </section>    
+
+    <section class="bottombutton">
+        <a href="image.html"><button>Previous</button></a>
+    </section>
+
+    <div class="modal-overlay" id="zoomModal">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        
+        <div class="filter-toggle-btn" id="paletteBtn">🎨</div>
+        <div class="filter-panel" id="filterPanel">
+            <h3>Filters</h3>
+            <button class="filter-btn" data-filter="grayscale">Grayscale</button>
+            <button class="filter-btn" data-filter="blur">Blur</button>
+            <button class="filter-btn" data-filter="brightness">Brightness</button>
+            <button class="filter-btn" data-filter="sepia">Sepia</button>
+            <button class="filter-btn" data-filter="contrast">Contrast</button>
+            <button class="clear-btn" id="clearFiltersBtn">Clear All</button>
+        </div>
+
+        <div class="modal-content-wrapper">
+            <img id="modalTargetImg" src="" alt="Zoomed View">
+        </div>
+    </div>
+
+    <script src="image.js"></script>
+</body>
+</html>
